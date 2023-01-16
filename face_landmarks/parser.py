@@ -25,14 +25,14 @@ def createParser(train=True):
 
         # model
         parser.add_argument ('-model', '--model_name', choices=("ONet","ResNet18"), 
-                            default="ResNet18", help='Choose, which model to use: ONet or ResNet18.')
+                            default="ONet", help='Choose, which model to use: ONet or ResNet18.')
 
         # train
-        parser.add_argument ('-n_epochs', '--num_epochs', type=int, default=200,
+        parser.add_argument ('-n_epochs', '--num_epochs', type=int, default=100,
                             help='Number of epochs in training process.')
         parser.add_argument ('-save_dir', '--save_dir', default="/workdir/results",
                             help='Path to the directory where output data will be saved.')
-        parser.add_argument ('-exp_name', '--exp_name', default="exp00",
+        parser.add_argument ('-exp_name', '--exp_name', default="exp11",
                             help='Name of the experiment.')
     else:
         parser = argparse.ArgumentParser(description='Input parameters to test the model.')
