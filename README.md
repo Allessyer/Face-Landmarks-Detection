@@ -23,6 +23,7 @@ Now you are inside the docker container.
 
 4. download and unzip dlib face landmarks detection model
 ```
+# inside docker container
 wget http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
 bzip2 -dk shape_predictor_68_face_landmarks.dat.bz2
 ```
@@ -30,22 +31,28 @@ bzip2 -dk shape_predictor_68_face_landmarks.dat.bz2
 
 5.1. untar landmarks_task.tgz
 ```
+# on your local computer
 tar zxvf landmarks_task.tgz
 ```
 5.2. find docker container id
 ```
+# on your local computer
 docker ps
 ```
 5.3. copy directory landmarks_task to the docker container
 ```
-docker cp <CONTAINER ID>:/workdir/
+# on your local computer
+docker cp <CONTAINER ID>:/workdir/ landmarks_task
 ```
+Now go back to the opened docker container
 5.4. Move annotation file to landmarks_task directory
 ```
+# inside docker container
 mv annotations_file_all_clean.csv landmarks_task
 ```
 6. install necessary libraries
 ```
+# inside docker container
 pip install -r requirements.txt
 ```
 
@@ -67,5 +74,11 @@ python task_test.py
 To see parameters of test function:
 ```
 python task_test.py -h
+```
+
+## DLIB Test
+To run test:
+```
+python dlib_test.py 
 ```
 
