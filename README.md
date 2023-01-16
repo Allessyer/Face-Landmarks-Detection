@@ -77,7 +77,7 @@ python task_test.py -h
 ```
 
 ## DLIB Test
-To run test:
+To run DLIB model inference on Menpo test dataset:
 ```
 python dlib_test.py 
 ```
