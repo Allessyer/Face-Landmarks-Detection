@@ -30,8 +30,7 @@ class CED:
     ys = np.array([np.count_nonzero(nmes <= x) for x in xs]) / float(num_data)
     fr = 1.0 - ys[-1]
     auc = simps(ys, x=xs) / thres
-    print(f"auc with thresh: {auc}")
-    print(f"auc without thresh: {simps(ys, x=xs)}")
+
     if plot:
         plt.plot(xs,ys)
         plt.xlabel("NME")
