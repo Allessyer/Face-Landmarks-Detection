@@ -44,7 +44,8 @@ docker ps
 # on your local computer
 docker cp <CONTAINER ID>:/workdir/ landmarks_task
 ```
-Now go back to the opened docker container
+Now go back to the opened docker container.
+
 5.4. Move annotation file to landmarks_task directory
 ```
 # inside docker container
