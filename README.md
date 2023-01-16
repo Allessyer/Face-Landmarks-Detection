@@ -49,11 +49,15 @@ pip install -r requirements.txt
 ```
 
 ## Train
-To run train with default parameters:
+1. To save results, create directory
+```
+mkdir results
+```
+2. To run train with default parameters(ONet model, 300W train dataset):
 ```
 python task_train.py 
 ```
-To see required parameters for train:
+3. To see required parameters for train:
 ```
 python task_train.py -h
 ```
