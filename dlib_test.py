@@ -45,12 +45,15 @@ def main():
         nme_score = metric.nme(pred_landmarks, true_landmarks, face_crop_shape)
         NME.append(nme_score)
         
+    auc = metric.get_AUC(NME, plot_ced=True)
+
+    plt.clf()
+
     plt.imshow(image)
     plt.scatter(true_landmarks[:,0], true_landmarks[:,1], s=5, c='b')
     plt.scatter(pred_landmarks[:,0], pred_landmarks[:,1],s=5, c='r')
 
     plt.savefig("/workdir/results/DLIB_sample.png")
-    auc = metric.get_AUC(NME, plot_ced=True)
 
     print(f"DLIB AUC = {auc}")
 
