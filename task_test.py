@@ -14,6 +14,7 @@ def main():
     exp_name = namespace.exp_name
     path2dir = namespace.dataset_dir
     path2results = namespace.save_dir
+    path2weights = namespace.path2weights
     dataset_name = namespace.dataset_name
 
     device = torch.device(f"cuda:{str(n_gpu)}" if torch.cuda.is_available() else "cpu")
@@ -24,6 +25,7 @@ def main():
         exp_name,
         path2dir,
         path2results,
+        path2weights,
         device,
         dataset_name)
 
