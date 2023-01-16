@@ -49,11 +49,11 @@ pip install -r requirements.txt
 ```
 
 ## Train
-1. To run train with default parameters(ONet model, 300W train dataset):
+To run train with default parameters(ONet model, 300W train dataset):
 ```
 python task_train.py 
 ```
-3. To see required parameters for train:
+To see parameters of train function:
 ```
 python task_train.py -h
 ```
@@ -63,6 +63,8 @@ To run test with default parameters:
 ```
 python task_test.py 
 ```
-
-
+To see parameters of test function:
+```
+python task_test.py -h
+```
 
