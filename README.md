@@ -2,7 +2,7 @@
 
 Чтобы запустить трейн и тест моделей, сделайте следующее:
 ```
-git clone 
+git clone https://github.com/Allessyer/VisionLabs.git
 cd VisionLabs
 ```
 Вам необходимы скачать два файла и поместить их в ту же директорию, что и Dockerfile:
