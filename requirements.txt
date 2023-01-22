@@ -1,5 +1,0 @@
-dlib
-protobuf==3.20.2
-numpy==1.21.6
-torchlm
-torchvision==0.14
