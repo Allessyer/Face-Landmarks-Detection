@@ -1,1 +1,27 @@
+## Face Alignment 
 
+Чтобы запустить трейн и тест моделей, сделайте следующее:
+```
+git clone 
+cd VisionLabs
+```
+Вам необходимы скачать два файла и поместить их в ту же директорию, что и Dockerfile:
+![landmarks_task.tgz](https://drive.google.com/file/d/0B8okgV6zu3CCWlU3b3p4bmJSVUU/view?usp=sharing) - датасеты
+![YinNet_exp1_3_model_best_auc.pth](https://drive.google.com/file/d/1y3utTHDCltB-u2pj0g8HY_4-W4LMxXGZ/view?usp=share_link) - веса лучшей модели
+
+Далее небходимо запустить докер контейнер:
+```
+docker build . -t face_alignment:0.0
+docker run -d --cpuset-cpus 100-200 --gpus '"device=0,2"' --name face_alignment face_alignment:0.0
+docker exec -it face_alignment /bin/bash
+```
+
+Теперь вы находитесь в докере. 
+Для запуска трейна, введите следующие команды:
+```
+python task_train.py
+```
+Для запуска теста, введите следующие команды:
+```
+python task_test.py
+```
