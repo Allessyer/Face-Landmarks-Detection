@@ -19,7 +19,7 @@
 ## Результат
 
 <p align="center">
-  <img src="images/model_pred_landmarks.png" width="750">
+  <img src="images/model_pred_landmarks.png" width="400">
 </p>
 <p align="center">   
    <em> Fig.1 Сравнение результата модели и настоящих координат 68 особых точек на лице.</em>
@@ -43,7 +43,7 @@
 | Menpo+300W Test  | 0.971 | 0.972  |
 
 <p align="center">
-  <img src="images/ced_results_all_models.png" width="400">
+  <img src="images/ced_results_all_models.png" width="750">
 </p>
 <p align="center">   
    <em> Fig.1 Сравнение CED графиков различных моделей .</em>
