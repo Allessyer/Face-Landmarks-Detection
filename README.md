@@ -3,7 +3,7 @@
 Чтобы запустить трейн и тест моделей, сделайте следующее:
 ```
 git clone https://github.com/Allessyer/VisionLabs.git
-cd VisionLabs
+cd Face-Landmarks-Detection
 ```
 Вам необходимы скачать два файла и поместить их в ту же директорию, что и Dockerfile:
 - ![landmarks_task.tgz](https://drive.google.com/file/d/0B8okgV6zu3CCWlU3b3p4bmJSVUU/view?usp=sharing) - датасеты
