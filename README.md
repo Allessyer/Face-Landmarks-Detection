@@ -6,6 +6,12 @@
 
 ## Результат
 
+<p align="center">
+  <img src="images/model_pred_landmarks.png" width="750">
+</p>
+<p align="center">   
+   <em> Fig.1 Сравнение результата модели и настоящих координат 68 особых точек на лице.</em>
+</p>
 
 ## Запуск 
 
