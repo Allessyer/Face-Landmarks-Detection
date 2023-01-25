@@ -19,13 +19,20 @@
 ## Модели
 В качестве архитектур рассматривались три CNN модели: ONet, YinNet и pretrained ResNet18.
 
+<p align="center">
+  <img src="images/Models.png" width="500">
+</p>
+<p align="center">   
+   <em> Fig.1 Архитектуры рассматриваемых моделей для данной задачи.</em>
+</p>
+
 ## Результат
 
 <p align="center">
   <img src="images/model_pred_landmarks.png" width="400">
 </p>
 <p align="center">   
-   <em> Fig.1 Сравнение результата модели и настоящих координат 68 особых точек на лице.</em>
+   <em> Fig.2 Сравнение результата модели и настоящих координат 68 особых точек на лице.</em>
 </p>
 
 
@@ -49,7 +56,7 @@
   <img src="images/ced_results_all_models.png" width="750">
 </p>
 <p align="center">   
-   <em> Fig.1 Сравнение CED графиков различных моделей .</em>
+   <em> Fig.3 Сравнение CED графиков различных моделей .</em>
 </p>
 
 
