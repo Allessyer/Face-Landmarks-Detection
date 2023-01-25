@@ -42,6 +42,16 @@
 | 300W Test        | 0.975 | 0.972  |
 | Menpo+300W Test  | 0.971 | 0.972  |
 
+<p align="center">
+  <img src="images/ced_results_all_models.png" width="400">
+</p>
+<p align="center">   
+   <em> Fig.1 Сравнение CED графиков различных моделей .</em>
+</p>
+
+
+
+
 ## Запуск 
 
 Чтобы запустить трейн и тест моделей, сделайте следующее:
