@@ -20,7 +20,7 @@
 В качестве архитектур рассматривались три CNN модели: ONet, YinNet и pretrained ResNet18.
 
 <p align="center">
-  <img src="images/Models.png" width="500">
+  <img src="images/Models.png" width="400">
 </p>
 <p align="center">   
    <em> Fig.1 Архитектуры рассматриваемых моделей для данной задачи.</em>
